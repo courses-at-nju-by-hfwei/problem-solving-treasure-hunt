@@ -86,5 +86,25 @@
 %%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.30\textwidth}{figs/tip-4}{\vspace{-0.50cm} \centerline{\textcolor{violet}{\small (Thursday, April 5, 2018)}}}
+  \vspace{0.30cm}
+
+  \begin{definition}[$r$-multiset]
+    Let $r = \lfloor n/k \rfloor$.
+    An \red{$r$-multiset} is a multiset of $n$ values such that
+    each of the values $0, 1, \cdots, \lfloor n/r \rfloor - 1$ occurs $r$ times 
+    and the value $\lfloor n/r \rfloor$ occurs ($n \mod r$) times.
+  \end{definition}
+
+  \begin{lemma}
+    There are at least $(k/e)^{n}$ different $r$-multisets.
+  \end{lemma}
+
+  \begin{theorem}
+    Executing these $r$-multisets on a decision tree will follow different paths.
+  \end{theorem}
+\end{frame}
 %%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%
