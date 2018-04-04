@@ -50,10 +50,12 @@
 
   \end{definition}
 
-  \begin{theorem}
+  % The only values that \red{may} occur more than $\lfloor n / k \rfloor$ times in $\mathcal{M}$ of $n$ elements
+  % are the values in a $k$-simplified multiset for $\mathcal{M}$.
 
-    The only values that \red{may} occur more than $\lfloor n / k \rfloor$ times in $\mathcal{M}$ of $n$ elements
-    are the values in a $k$-simplified multiset for $\mathcal{M}$.
+  \begin{theorem}
+    If a value occurs more than $\lfloor n / k \rfloor$ times in $\mathcal{M}$ of $n$ elements,
+    then it is in a $k$-simplified multiset for $\mathcal{M}$.
   \end{theorem}
 
   Prove this theorem. Take $k = 2$ again. Design an $\Theta(n)$ algorithm for $k = 2$. 
@@ -62,7 +64,27 @@
 %%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.30\textwidth}{figs/tip-3}{\vspace{-0.50cm} \centerline{\textcolor{violet}{\small (Wednesday, April 4, 2018)}}}
+
+  \vspace{0.30cm}
+  \begin{exampleblock}{Today, you have an efficient data structure $T$ for a multiset:}
+    We denote a multiset by $\mathcal{M} = \set{(v_i, c_i)}$,
+    where $c_i$ is the number of times $v_i$ occurs in $\mathcal{M}$.
+    The number of distinct values in $\mathcal{M}$ is denoted by $d = |\set{v_i}|$.\\[6pt]
+
+    The data structure $T$ for $\mathcal{M}$ contains $d$ nodes, each being a pair $(v_i, c_i)$.
+
+    It supports \textsc{Insert}, \textsc{Delete}, and \textsc{Search} in $\Theta(\lg d)$.
+  \end{exampleblock}
+
+  \begin{center}
+    Use this data structure \textcolor{gray}{\small (you are not required to implement it)} \\
+    in your algorithm to achieve the time complexity of $\Theta(n \lg k)$.
+  \end{center}
+\end{frame}
 %%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
