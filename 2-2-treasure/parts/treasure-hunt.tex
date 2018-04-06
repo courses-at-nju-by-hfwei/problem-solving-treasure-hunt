@@ -108,3 +108,24 @@
 %%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.30\textwidth}{figs/tip-5}{\vspace{-0.50cm} \centerline{\textcolor{violet}{\small (Friday, April 6, 2018)}}}
+  \vspace{0.30cm}
+
+  \begin{definition}[$L = L_1 \ast L_2$]
+    Given two lists $L_1$ and $L_2$, a new list $L = L_1 \ast L_2$ is defined as follows:
+    \[
+      L[i] = \min \big\{ L_1[i], L_2[i] \big\}, 0 \le i < n
+    \]
+  \end{definition}
+
+  \begin{theorem}
+    If $r$-lists $L_1$ and $L_2$ are different, then $L = L_1 \ast L_2$ \red{contains} a value which occurs more than $r$ times.
+  \end{theorem}
+
+  \begin{center}
+    Prove the theorem on Thursday \red{\it by contradiction}, \\
+    with the help of the definition and theorem above.
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%
