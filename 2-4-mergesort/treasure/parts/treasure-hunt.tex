@@ -1,0 +1,91 @@
+% file: parts/treasure-hunt.tex
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.45\textwidth}{figs/treasure-hunt}
+
+  \begin{columns}
+    \column{0.50\textwidth}
+      \fignocaption{width = 0.45\textwidth}{figs/hints}
+    \column{0.50\textwidth}
+      \fignocaption{width = 0.50\textwidth}{figs/help-wanted}
+  \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{exampleblock}{Analysis of Mergesort in CLRS (\# of Comparisions; $a_i : \infty$ not Counted)}
+    \begin{enumerate}[(a)]
+      \setlength{\itemsep}{5pt}
+      \item Analyze the \purple{worst case $W(n)$} and the \purple{best case $B(n)$} 
+	time complexity of mergesort \red{\it as accurately as possible}. \\
+	Explore the relation between them and the binary representations of numbers. \\
+	Plot $W(n)$ and $B(n)$ and explain what you observe.
+      \item Analyze the \purple{average case $A(n)$} time complexity of mergesort. \\
+	Plot $A(n)$ and explain what you observe.
+      \item \purple{Prove that}: 
+	The minimum number of comparisons needed to merge two sorted arrays of equal size $m$ is $2m - 1$.
+    \end{enumerate}
+  \end{exampleblock}
+
+  \pause
+  \fignocaption{width = 0.30\textwidth}{figs/tip-1}
+  {\vspace{-0.30cm} \centerline{\textcolor{cyan}{\small (WED., April 11, 2018)}}}
+  \[
+    \teal{W(n): \text{Consider } W(n+1)}
+  \]
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.35\textwidth}{figs/tip-2}
+  {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (THU, April 12, 2018)}}}
+
+  \vspace{0.30cm}
+  \[
+    W(n) = \left\{\begin{array}{lr}
+      0,	& n = 1 \\[4pt]
+      W(\lfloor \frac{n}{2} \rfloor) + W(\lceil \frac{n}{2} \rceil) + (n - 1), & \text{\it o.w.}
+    \end{array}\right.
+  \]
+
+  \vspace{0.30cm}
+  \[
+    \teal{W(n+1) - W(n)}
+  \]
+
+  \vspace{0.10cm}
+  \begin{center}
+    {\large {The total number of bits in the binary representations \\ of \red{\it all the numbers less than $n$}.}}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.35\textwidth}{figs/tip-3}
+  {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (FRI, April 13, 2018)}}}
+
+  \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.35\textwidth}{figs/tip-4}
+  {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (SAT, April 14, 2018)}}}
+
+  \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.35\textwidth}{figs/tip-5}
+  {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (SUN, April 15, 2018)}}}
+
+  \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
+\end{frame}
+%%%%%%%%%%%%%%%

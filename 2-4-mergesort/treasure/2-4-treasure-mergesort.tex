@@ -1,0 +1,31 @@
+\documentclass[]{beamer}
+
+\input{preamble}
+
+%%%%%%%%%%
+\title[\titletext]{\titletext}
+\subtitle{(Wednesday, April 11, 2018 $\sim$ Sunday, April 15, 2018)}
+
+\author[Hengfeng Wei]{\large Hengfeng Wei}
+\titlegraphic{\includegraphics[height = 2.0cm]{figs/qrcode-ps-treasure-hunt.png}}
+\institute{hfwei@nju.edu.cn}
+\date{April 11, 2018}
+
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering, plain]
+    \frametitle{\titletext}
+    \tableofcontents[currentsection, sectionstyle=show/shaded, subsectionstyle=show/show/hide]
+  \end{frame}
+}
+%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\input{parts/treasure-hunt}
+
+\thankyou{}
+\input{suggestion}
+
+\end{document}
+%%%%%%%%%%
