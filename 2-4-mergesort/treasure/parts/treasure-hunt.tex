@@ -68,7 +68,18 @@
   \fignocaption{width = 0.35\textwidth}{figs/tip-3}
   {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (FRI, April 13, 2018)}}}
 
-  \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
+  \vspace{0.30cm}
+  \[
+    B(n) = \left\{\begin{array}{lr}
+      0,	& n = 1 \\[4pt]
+      B(\lfloor \frac{n}{2} \rfloor) + B(\lceil \frac{n}{2} \rceil) + \lfloor \frac{n}{2} \rfloor, & \text{\it o.w.}
+    \end{array}\right.
+  \]
+
+  \vspace{0.30cm}
+  \begin{center}
+    {\large {The total number of \red{$1$s} in the binary representations \\ of \red{\it all the numbers less than $n$}.}}
+  \end{center}
 \end{frame}
 %%%%%%%%%%%%%%%
 
