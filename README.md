@@ -7,6 +7,11 @@ The after-class "Treasure Hunting" section in the Problem Solving Class at Nanji
 - Deep thinking
 - A taste of research (*re-search*)
 
+# Participants
+
+- 171860658 郑奘巍 (Fermat)
+- Hengfeng Wei (hengxin)
+
 # How to Participate?
 
 - Clone this repository: `git clone https://github.com/hengxin/problem-solving-treasure-hunt.git`.
