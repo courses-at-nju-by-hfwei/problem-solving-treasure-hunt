@@ -115,7 +115,15 @@
   \fignocaption{width = 0.35\textwidth}{figs/tip-5}
   {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (TUE, April 17, 2018)}}}
 
-  \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
+  \vspace{0.50cm}
+  \[
+    A(n) = A(\lfloor \frac{n}{2} \rfloor) + A(\lceil \frac{n}{2} \rceil) + 
+    \Big(n - \big(\underbrace{\frac{\lfloor \frac{n}{2} \rfloor}{\lceil \frac{n}{2} \rceil + 1} 
+    + \frac{\lceil \frac{n}{2} \rceil}{\lfloor \frac{n}{2} \rfloor + 1}}_{\text{\red{Remember Tip $4$}}}\big)\Big)
+  \]
+
+  \vspace{0.80cm}
+  \centerline{You are {\it not} required to solve this recurrence.}
 \end{frame}
 %%%%%%%%%%%%%%%
 
@@ -123,6 +131,15 @@
 \begin{frame}{}
   \fignocaption{width = 0.35\textwidth}{figs/tip-5}
   {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (WED, April 18, 2018)}}}
+
+  \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fignocaption{width = 0.35\textwidth}{figs/tip-5}
+  {\vspace{-0.50cm} \centerline{\textcolor{cyan}{\small (THU, April 19, 2018)}}}
 
   \fignocaption{width = 0.30\textwidth}{figs/keep-calm-stay-tuned}
 \end{frame}
